@@ -10,7 +10,7 @@ class LinkedList:
         self.root = None
 
 # Defining method which checks whether the linked list or stack is empty or not
-    def isEmpty(self):
+    def is_empty(self):
         return True if self.root is None else False
 
 # Defining method to push data in stack
@@ -22,7 +22,7 @@ class LinkedList:
 
 # Defining method to pop data in stack
     def pop(self):
-        if self.isEmpty():
+        if self.is_empty():
             print("Stack is empty")
             return
         popped = self.root.data
